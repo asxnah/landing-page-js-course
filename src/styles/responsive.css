@@ -1,0 +1,180 @@
+@media (width <= 1440px) {
+	.headerContent {
+		width: 100%;
+	}
+
+	main,
+	.footerContent {
+		width: 760px;
+	}
+}
+
+@media (width <= 1024) {
+	.headerContent {
+		width: 860px;
+	}
+}
+
+@media (width <= 912px) {
+	main {
+		width: 100%;
+		padding-left: 26px;
+		padding-right: 26px;
+	}
+
+	.footer {
+		width: 100%;
+		padding: 0 26px;
+	}
+	.footerContent {
+		width: 100%;
+	}
+}
+
+@media (width <= 700px) {
+	.button--colored--standard,
+	.button--colored--submit {
+		padding: 10px 34px;
+	}
+
+	.header {
+		display: none;
+	}
+
+	.hero {
+		align-items: center;
+		flex-direction: column;
+		gap: 16px;
+	}
+	.hero__content {
+		align-items: center;
+	}
+	.hero__description {
+		margin: 0 0 20px 0;
+	}
+	.hero__image {
+		width: 60%;
+		height: auto;
+	}
+}
+
+@media (width <= 600px) {
+	:root {
+		--text--heroSectionHeading: 32px;
+		--text--heading--l: 24px;
+		--text--heading--m: 20px;
+		--text--heading--s: 16px;
+		--text--default: 14px;
+		--text--s: 12px;
+	}
+
+	main {
+		gap: 48px;
+		padding-bottom: 48px;
+	}
+
+	.about__list__el {
+		gap: 16px;
+	}
+	.about__list__el__text {
+		gap: 8px;
+	}
+	.about__list__el__icon {
+		width: 28px;
+		height: 28px;
+	}
+
+	.signUpForm {
+		width: 100%;
+	}
+
+	.reviewsList__el__author__name {
+		font-size: 16px;
+	}
+}
+
+@media (width <= 500px) {
+	:root {
+		--text--heroSectionHeading: 28px;
+		--text--heading--l: 20px;
+		--text--heading--m: 16px;
+		--text--heading--s: 14px;
+		--text--default: 14px;
+		--text--s: 12px;
+	}
+
+	main {
+		gap: 36px;
+		padding-bottom: 36px;
+	}
+
+	.courseContent,
+	.reviews,
+	.faq {
+		gap: 24px;
+	}
+
+	.signUpForm__inputs {
+		gap: 10px;
+	}
+
+	.reviewsList__el {
+		gap: 10px;
+	}
+
+	.reviewsList__el:last-child {
+		display: none;
+	}
+}
+
+@media (width <= 300px) {
+	main,
+	.footer {
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+
+	input {
+		padding: 12px 16px;
+	}
+
+	.about__list__el,
+	.signUpForm,
+	.dropDownListEl,
+	.reviewsList__el__review {
+		padding: 14px 16px;
+	}
+
+	.footerContent {
+		flex-direction: column;
+		gap: 10px;
+	}
+}
+
+@media (width <= 200px) {
+	main,
+	.footer {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	main {
+		padding-top: 16px;
+	}
+
+	.dropDownListEl__headerContent__svg {
+		display: none;
+	}
+
+	.reviewsList__el__author__icon {
+		height: 32px;
+	}
+
+	.about__list__el {
+		flex-direction: column;
+	}
+
+	.footer {
+		margin-bottom: 16px;
+	}
+}
