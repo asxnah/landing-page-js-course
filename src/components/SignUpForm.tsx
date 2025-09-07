@@ -1,4 +1,5 @@
 import { forwardRef, useState, type FormEvent } from 'react';
+import DOMPurify from 'dompurify';
 import { Input } from '../uikit/Input';
 import { Button } from '../uikit/Button';
 
@@ -13,6 +14,23 @@ const SignUpForm = forwardRef<HTMLFormElement, SignUpFormProps>(
 		const [email, setEmail] = useState<string>('');
 		const [phone, setPhone] = useState<string>('');
 
+		const sanitize = (value: string, field: 'name' | 'email' | 'phone') => {
+			const sanitizedValue = DOMPurify.sanitize(value);
+			switch (field) {
+				case 'name':
+					setName(sanitizedValue);
+					break;
+				case 'email':
+					setEmail(sanitizedValue);
+					break;
+				case 'phone':
+					setPhone(sanitizedValue);
+					break;
+				default:
+					break;
+			}
+		};
+
 		const submit = (e: FormEvent<HTMLFormElement>) => {
 			e.preventDefault();
 			onSubmit();
@@ -26,20 +44,20 @@ const SignUpForm = forwardRef<HTMLFormElement, SignUpFormProps>(
 						placeholder="Name"
 						id="name"
 						value={name}
-						onChange={(e) => setName(e.target.value)}
+						onChange={(e) => sanitize(e.target.value, 'name')}
 					/>
 					<Input
 						placeholder="Email"
 						id="email"
 						value={email}
-						onChange={(e) => setEmail(e.target.value)}
+						onChange={(e) => sanitize(e.target.value, 'email')}
 						type="email"
 					/>
 					<Input
 						placeholder="Phone"
 						id="phone"
 						value={phone}
-						onChange={(e) => setPhone(e.target.value)}
+						onChange={(e) => sanitize(e.target.value, 'phone')}
 						type="tel"
 					/>
 				</div>
