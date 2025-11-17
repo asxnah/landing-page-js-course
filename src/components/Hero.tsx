@@ -16,7 +16,7 @@ const Hero = ({ onClick }: HeroProps) => {
 			</div>
 			<img
 				className="hero__image"
-				src="/assets/hero.png"
+				src="./assets/hero.png"
 				alt="Female with long hair in blue shirt and pants smiling while using her laptop."
 			/>
 		</section>
