@@ -13,7 +13,7 @@ const Reviews = forwardRef<HTMLElement, {}>((_, ref) => {
 					<div className="reviewsList__el__author">
 						<img
 							className="reviewsList__el__author__icon"
-							src="/assets/AvatarMalePortrait.png"
+							src="./assets/AvatarMalePortrait.png"
 							alt="Avatar Male Portrait"
 						/>
 						<h4 className="reviewsList__el__author__name">Alex T.</h4>
@@ -27,7 +27,7 @@ const Reviews = forwardRef<HTMLElement, {}>((_, ref) => {
 					<div className="reviewsList__el__author">
 						<img
 							className="reviewsList__el__author__icon"
-							src="/assets/AvatarFemalePortrait.png"
+							src="./assets/AvatarFemalePortrait.png"
 							alt="Avatar Female Portrait"
 						/>
 						<h4 className="reviewsList__el__author__name">Priya S.</h4>

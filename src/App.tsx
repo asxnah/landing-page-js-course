@@ -4,7 +4,7 @@ import './App.css';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/landing-page-js-course">
       <Routes>
         <Route path='/' element={<Home />} />
       </Routes>
