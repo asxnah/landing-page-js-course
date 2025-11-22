@@ -10,8 +10,4 @@ npm run dev
 
 ## Online view
 
-To see the application online, follow this link:
-
-```
-asxnah.github.io/landing-page-js-course/
-```
+To see the application online, [follow this link](asxnah.github.io/landing-page-js-course/).
