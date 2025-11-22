@@ -4,7 +4,7 @@
 
 To run the application, use the following command:
 
-```cmd
+```
 npm run dev
 ```
 
@@ -12,6 +12,6 @@ npm run dev
 
 To see the application online, follow this link:
 
-```link
-https://landing-page-js-course.vercel.app/
+```
+asxnah.github.io/landing-page-js-course/
 ```
